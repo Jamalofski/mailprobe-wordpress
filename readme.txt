@@ -1,5 +1,5 @@
 === MailProbe – Stop Fake Signups ===
-Contributors: irisdigital
+Contributors: mailprobe
 Tags: fake registration, spam registration, disposable email, email verification, woocommerce
 Requires at least: 6.5
 Tested up to: 7.1
