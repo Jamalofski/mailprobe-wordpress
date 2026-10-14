@@ -1,4 +1,4 @@
-=== MailProbe – Stop Fake Signups ===
+=== MailProbe ===
 Contributors: mailprobe
 Tags: fake registration, spam registration, disposable email, email verification, woocommerce
 Requires at least: 6.5
