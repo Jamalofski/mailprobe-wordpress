@@ -220,9 +220,11 @@ class MailProbe_Orders {
 	}
 
 	/**
-	 * Fills the column, with the colours WooCommerce gives order statuses.
+	 * Fills the column, with the colours WooCommerce gives order statuses: one
+	 * short word (the column is narrow and WooCommerce cuts long ones), the
+	 * explanation on hover.
 	 *
-	 * @param string           $column The column.
+	 * @param string             $column The column.
 	 * @param WC_Order|int|mixed $order  The order (orders table) or its ID (posts table).
 	 */
 	public static function render_column( $column, $order ) {
@@ -234,19 +236,24 @@ class MailProbe_Orders {
 		}
 		$word   = $order ? (string) $order->get_meta( self::META ) : '';
 		$labels = array(
-			'pending'    => array( __( 'Checking', 'mailprobe' ), 'status-pending' ),
-			'valid'      => array( __( 'Valid', 'mailprobe' ), 'status-completed' ),
-			'risky'      => array( __( 'Unconfirmed', 'mailprobe' ), 'status-on-hold' ),
-			'unknown'    => array( __( 'Unknown', 'mailprobe' ), 'status-on-hold' ),
-			'role'       => array( __( 'Shared address', 'mailprobe' ), 'status-processing' ),
-			'invalid'    => array( __( 'Cannot receive email', 'mailprobe' ), 'status-failed' ),
-			'disposable' => array( __( 'Disposable', 'mailprobe' ), 'status-failed' ),
-			'skipped'    => array( __( 'Not checked', 'mailprobe' ), 'status-cancelled' ),
+			'pending'    => array( __( 'Checking', 'mailprobe' ), 'status-pending', __( 'The check is in progress.', 'mailprobe' ) ),
+			'valid'      => array( __( 'Valid', 'mailprobe' ), 'status-completed', __( 'The billing email can receive emails.', 'mailprobe' ) ),
+			'risky'      => array( __( 'Unconfirmed', 'mailprobe' ), 'status-on-hold', __( 'The mail server accepts the address, but the mailbox cannot be confirmed.', 'mailprobe' ) ),
+			'unknown'    => array( __( 'Unknown', 'mailprobe' ), 'status-on-hold', __( 'The mail server could not be checked.', 'mailprobe' ) ),
+			'role'       => array( __( 'Shared', 'mailprobe' ), 'status-processing', __( 'A shared address, such as info@ or contact@.', 'mailprobe' ) ),
+			'invalid'    => array( __( 'Invalid', 'mailprobe' ), 'status-failed', __( 'The billing email cannot receive emails. See the order notes.', 'mailprobe' ) ),
+			'disposable' => array( __( 'Disposable', 'mailprobe' ), 'status-failed', __( 'The billing email is a disposable address.', 'mailprobe' ) ),
+			'skipped'    => array( __( 'Unchecked', 'mailprobe' ), 'status-cancelled', __( 'The check could not be made. See the order notes.', 'mailprobe' ) ),
 		);
 		if ( ! isset( $labels[ $word ] ) ) {
 			echo '&ndash;';
 			return;
 		}
-		printf( '<mark class="order-status %1$s"><span>%2$s</span></mark>', esc_attr( $labels[ $word ][1] ), esc_html( $labels[ $word ][0] ) );
+		printf(
+			'<mark class="order-status %1$s" title="%3$s"><span>%2$s</span></mark>',
+			esc_attr( $labels[ $word ][1] ),
+			esc_html( $labels[ $word ][0] ),
+			esc_attr( $labels[ $word ][2] )
+		);
 	}
 }

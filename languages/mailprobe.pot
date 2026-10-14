@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-14T12:35:42+00:00\n"
+"POT-Creation-Date: 2026-10-14T12:47:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: mailprobe\n"
@@ -275,36 +275,68 @@ msgstr ""
 msgid "Email check"
 msgstr ""
 
-#: includes/class-mailprobe-orders.php:237
+#: includes/class-mailprobe-orders.php:239
 msgid "Checking"
 msgstr ""
 
-#: includes/class-mailprobe-orders.php:238
-msgid "Valid"
-msgstr ""
-
 #: includes/class-mailprobe-orders.php:239
-msgid "Unconfirmed"
+msgid "The check is in progress."
 msgstr ""
 
 #: includes/class-mailprobe-orders.php:240
-msgid "Unknown"
+msgid "Valid"
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:240
+msgid "The billing email can receive emails."
 msgstr ""
 
 #: includes/class-mailprobe-orders.php:241
-msgid "Shared address"
+msgid "Unconfirmed"
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:241
+msgid "The mail server accepts the address, but the mailbox cannot be confirmed."
 msgstr ""
 
 #: includes/class-mailprobe-orders.php:242
-msgid "Cannot receive email"
+msgid "Unknown"
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:242
+msgid "The mail server could not be checked."
 msgstr ""
 
 #: includes/class-mailprobe-orders.php:243
-msgid "Disposable"
+msgid "Shared"
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:243
+msgid "A shared address, such as info@ or contact@."
 msgstr ""
 
 #: includes/class-mailprobe-orders.php:244
-msgid "Not checked"
+msgid "Invalid"
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:244
+msgid "The billing email cannot receive emails. See the order notes."
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:245
+msgid "Disposable"
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:245
+msgid "The billing email is a disposable address."
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:246
+msgid "Unchecked"
+msgstr ""
+
+#: includes/class-mailprobe-orders.php:246
+msgid "The check could not be made. See the order notes."
 msgstr ""
 
 #: includes/class-mailprobe-policy.php:118

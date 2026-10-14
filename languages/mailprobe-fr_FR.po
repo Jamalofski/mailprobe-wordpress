@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-14T12:35:42+00:00\n"
+"POT-Creation-Date: 2026-10-14T12:47:31+00:00\n"
 "PO-Revision-Date: 2026-10-14 12:00+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: mailprobe\n"
@@ -277,37 +277,69 @@ msgstr "Le client voulait-il dire %s ?"
 msgid "Email check"
 msgstr "Contrôle e-mail"
 
-#: includes/class-mailprobe-orders.php:237
+#: includes/class-mailprobe-orders.php:239
 msgid "Checking"
 msgstr "En cours"
 
-#: includes/class-mailprobe-orders.php:238
+#: includes/class-mailprobe-orders.php:239
+msgid "The check is in progress."
+msgstr "La vérification est en cours."
+
+#: includes/class-mailprobe-orders.php:240
 msgid "Valid"
 msgstr "Valide"
 
-#: includes/class-mailprobe-orders.php:239
+#: includes/class-mailprobe-orders.php:240
+msgid "The billing email can receive emails."
+msgstr "L’e-mail de facturation peut recevoir des e-mails."
+
+#: includes/class-mailprobe-orders.php:241
 msgid "Unconfirmed"
 msgstr "Non confirmée"
 
-#: includes/class-mailprobe-orders.php:240
+#: includes/class-mailprobe-orders.php:241
+msgid "The mail server accepts the address, but the mailbox cannot be confirmed."
+msgstr "Le serveur de messagerie accepte l’adresse, mais la boîte ne peut pas être confirmée."
+
+#: includes/class-mailprobe-orders.php:242
 msgid "Unknown"
 msgstr "Inconnue"
 
-#: includes/class-mailprobe-orders.php:241
-msgid "Shared address"
-msgstr "Adresse partagée"
-
 #: includes/class-mailprobe-orders.php:242
-msgid "Cannot receive email"
-msgstr "Ne reçoit pas d’e-mails"
+msgid "The mail server could not be checked."
+msgstr "Le serveur de messagerie n’a pas pu être vérifié."
 
 #: includes/class-mailprobe-orders.php:243
+msgid "Shared"
+msgstr "Partagée"
+
+#: includes/class-mailprobe-orders.php:243
+msgid "A shared address, such as info@ or contact@."
+msgstr "Une adresse partagée, comme info@ ou contact@."
+
+#: includes/class-mailprobe-orders.php:244
+msgid "Invalid"
+msgstr "Invalide"
+
+#: includes/class-mailprobe-orders.php:244
+msgid "The billing email cannot receive emails. See the order notes."
+msgstr "L’e-mail de facturation ne peut pas recevoir d’e-mails. Voir les notes de la commande."
+
+#: includes/class-mailprobe-orders.php:245
 msgid "Disposable"
 msgstr "Jetable"
 
-#: includes/class-mailprobe-orders.php:244
-msgid "Not checked"
+#: includes/class-mailprobe-orders.php:245
+msgid "The billing email is a disposable address."
+msgstr "L’e-mail de facturation est une adresse jetable."
+
+#: includes/class-mailprobe-orders.php:246
+msgid "Unchecked"
 msgstr "Non vérifiée"
+
+#: includes/class-mailprobe-orders.php:246
+msgid "The check could not be made. See the order notes."
+msgstr "La vérification n’a pas pu être faite. Voir les notes de la commande."
 
 #: includes/class-mailprobe-policy.php:118
 msgid "the address is not well formed"
