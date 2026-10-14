@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+
+# Kept out of the release zip (git archive, bin/build-zip.sh).
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/README.md export-ignore
+/bin export-ignore
+/languages export-ignore
+/dist export-ignore
