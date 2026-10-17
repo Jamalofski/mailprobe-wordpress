@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-10-14T12:47:31+00:00\n"
-"PO-Revision-Date: 2026-10-14 12:00+0000\n"
+"PO-Revision-Date: 2026-10-17 15:00+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: mailprobe\n"
 
@@ -45,7 +45,7 @@ msgstr "https://irisdigital.tech/"
 #: includes/class-mailprobe-admin.php:69
 #, php-format
 msgid "When a visitor creates an account or places an order, this site sends the email address entered to MailProbe (mailprobe.dev), a service of Iris Digital hosted in France, to check that the address can receive emails. MailProbe checks the address in real time and does not store it once the check is done. MailProbe privacy policy: %s"
-msgstr "Quand un visiteur crée un compte ou passe une commande, ce site envoie l’adresse e-mail saisie à MailProbe (mailprobe.dev), un service d’Iris Digital hébergé en France, pour vérifier qu’elle peut recevoir des e-mails. MailProbe vérifie l’adresse en temps réel et ne la conserve pas une fois la vérification faite. Politique de confidentialité de MailProbe : %s"
+msgstr "Lorsqu’un compte est créé ou qu’une commande est passée, ce site envoie l’adresse e-mail saisie à MailProbe (mailprobe.dev), un service d’Iris Digital hébergé en France, pour vérifier qu’elle peut recevoir des e-mails. MailProbe vérifie l’adresse en temps réel et ne la conserve pas une fois la vérification faite. Politique de confidentialité de MailProbe : %s"
 
 #: includes/class-mailprobe-admin.php:87
 msgid "Settings"
@@ -53,11 +53,11 @@ msgstr "Réglages"
 
 #: includes/class-mailprobe-admin.php:149
 msgid "A MailProbe API key starts with mp_live_. The previous key was kept."
-msgstr "Une clé d’API MailProbe commence par mp_live_. L’ancienne clé est conservée."
+msgstr "Une clé de l’API MailProbe commence par mp_live_. L’ancienne clé est conservée."
 
 #: includes/class-mailprobe-admin.php:155
 msgid "MailProbe refused this API key. The previous key was kept."
-msgstr "MailProbe a refusé cette clé d’API. L’ancienne clé est conservée."
+msgstr "MailProbe a refusé cette clé de l’API. L’ancienne clé est conservée."
 
 #. translators: %s: the error.
 #: includes/class-mailprobe-admin.php:162
@@ -87,7 +87,7 @@ msgstr "Connexion"
 
 #: includes/class-mailprobe-admin.php:193
 msgid "API key"
-msgstr "Clé d’API"
+msgstr "Clé de l’API"
 
 #: includes/class-mailprobe-admin.php:196
 msgid "Set in wp-config.php (MAILPROBE_API_KEY)."
@@ -99,7 +99,7 @@ msgstr "Une clé est enregistrée. Laissez le champ vide pour la garder."
 
 #: includes/class-mailprobe-admin.php:203
 msgid "Remove the saved key"
-msgstr "Supprimer la clé enregistrée"
+msgstr "Retirer la clé enregistrée"
 
 #: includes/class-mailprobe-admin.php:211
 msgid "Registration"
@@ -107,7 +107,7 @@ msgstr "Inscription"
 
 #: includes/class-mailprobe-admin.php:212
 msgid "The WordPress registration form and the WooCommerce \"My account\" form. The visitor waits three seconds at most; when MailProbe cannot answer in time or cannot be reached, the registration goes through."
-msgstr "Le formulaire d’inscription de WordPress et celui de la page « Mon compte » de WooCommerce. Le visiteur attend trois secondes au plus ; si MailProbe ne répond pas à temps ou n’est pas joignable, l’inscription passe."
+msgstr "Le formulaire d’inscription de WordPress et celui de la page « Mon compte » de WooCommerce. L’attente est de trois secondes au plus ; si MailProbe ne répond pas à temps ou n’est pas joignable, l’inscription passe."
 
 #: includes/class-mailprobe-admin.php:215
 msgid "Refuse"
@@ -143,7 +143,7 @@ msgstr "Vérifier l’e-mail de facturation de chaque nouvelle commande"
 
 #: includes/class-mailprobe-admin.php:238
 msgid "The check runs in the background after the order: the customer never waits and no order is refused. An order whose email cannot receive emails or is disposable gets a private note and a red mark in the orders list."
-msgstr "La vérification se fait en arrière-plan après la commande : le client n’attend jamais et aucune commande n’est refusée. Une commande dont l’e-mail ne peut pas recevoir d’e-mails ou est jetable reçoit une note privée et une marque rouge dans la liste des commandes."
+msgstr "La vérification se fait en arrière-plan après la commande : la clientèle n’attend jamais et aucune commande n’est refusée. Une commande dont l’e-mail ne peut pas recevoir d’e-mails ou est jetable reçoit une note privée et une marque rouge dans la liste des commandes."
 
 #: includes/class-mailprobe-admin.php:249
 msgid "Activity"
@@ -163,7 +163,7 @@ msgstr "Depuis le %1$s : %2$s adresses vérifiées, %3$s inscriptions refusées
 #: includes/class-mailprobe-admin.php:280
 #, php-format
 msgid "No account yet? <a href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Create one on mailprobe.dev</a>: 100 checks are free. Then open the Developer tab of your MailProbe dashboard, create an API key and paste it here."
-msgstr "Pas encore de compte ? <a href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Créez-en un sur mailprobe.dev</a> : 100 vérifications sont offertes. Ouvrez ensuite l’onglet Developer de votre tableau de bord MailProbe, créez une clé d’API et collez-la ici."
+msgstr "Pas encore de compte ? <a href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Créez-en un sur mailprobe.dev</a> : 100 vérifications sont offertes. Ouvrez ensuite l’onglet Developer de votre tableau de bord MailProbe, créez une clé de l’API et collez-la ici."
 
 #. translators: 1: number of credits, 2: pricing URL.
 #: includes/class-mailprobe-admin.php:301
@@ -179,7 +179,7 @@ msgstr "MailProbe est activé mais pas encore connecté."
 
 #: includes/class-mailprobe-admin.php:332
 msgid "Add your API key"
-msgstr "Ajouter votre clé d’API"
+msgstr "Ajouter votre clé de l’API"
 
 #: includes/class-mailprobe-admin.php:346
 msgid "MailProbe has no credits left: registrations and orders are no longer checked."
@@ -191,7 +191,7 @@ msgstr "Acheter des crédits"
 
 #: includes/class-mailprobe-admin.php:349
 msgid "MailProbe refused the API key: registrations and orders are no longer checked."
-msgstr "MailProbe a refusé la clé d’API : les inscriptions et les commandes ne sont plus vérifiées."
+msgstr "MailProbe a refusé la clé de l’API : les inscriptions et les commandes ne sont plus vérifiées."
 
 #: includes/class-mailprobe-admin.php:350
 msgid "Check the key"
@@ -199,7 +199,7 @@ msgstr "Vérifier la clé"
 
 #: includes/class-mailprobe-admin.php:352
 msgid "Dismiss"
-msgstr "Masquer"
+msgstr "Ignorer"
 
 #: includes/class-mailprobe-admin.php:360
 msgid "You are not allowed to do this."
@@ -212,7 +212,7 @@ msgstr "MailProbe a envoyé une réponse que l’extension ne sait pas lire."
 
 #: includes/class-mailprobe-client.php:118
 msgid "No MailProbe API key is set."
-msgstr "Aucune clé d’API MailProbe n’est enregistrée."
+msgstr "Aucune clé de l’API MailProbe n’est définie."
 
 #. translators: %s: the network error message.
 #: includes/class-mailprobe-client.php:139
@@ -222,7 +222,7 @@ msgstr "MailProbe n’a pas pu être joint : %s"
 
 #: includes/class-mailprobe-client.php:169
 msgid "MailProbe refused the API key. Check it in Settings > MailProbe."
-msgstr "MailProbe a refusé la clé d’API. Vérifiez-la dans Réglages > MailProbe."
+msgstr "MailProbe a refusé la clé de l’API. Vérifiez-la dans Réglages > MailProbe."
 
 #: includes/class-mailprobe-client.php:173
 msgid "This domain can only be verified with purchased credits."
@@ -270,7 +270,7 @@ msgstr "MailProbe : l’e-mail de facturation %1$s ne peut pas recevoir d’e-m
 #: includes/class-mailprobe-orders.php:197
 #, php-format
 msgid "Did the customer mean %s?"
-msgstr "Le client voulait-il dire %s ?"
+msgstr "L’adresse voulue était-elle %s ?"
 
 #: includes/class-mailprobe-orders.php:213
 #: includes/class-mailprobe-orders.php:217
@@ -372,7 +372,7 @@ msgstr "le fournisseur de messagerie n’autorise pas les vérifications"
 #: includes/class-mailprobe-policy.php:125
 #: includes/class-mailprobe-policy.php:126
 msgid "the mail server asked to try again later"
-msgstr "le serveur de messagerie demande de réessayer plus tard"
+msgstr "le serveur de messagerie demande de réessayer ultérieurement"
 
 #: includes/class-mailprobe-policy.php:127
 msgid "the mail server did not answer in time"
@@ -392,11 +392,11 @@ msgstr "Erreur :"
 
 #: includes/class-mailprobe-registration.php:151
 msgid "Disposable email addresses are not accepted. Please use your usual email address."
-msgstr "Les adresses e-mail jetables ne sont pas acceptées. Merci d’utiliser votre adresse habituelle."
+msgstr "Les adresses e-mail jetables ne sont pas acceptées. Veuillez utiliser votre adresse habituelle."
 
 #: includes/class-mailprobe-registration.php:154
 msgid "Please use a personal email address, not a shared one such as info@ or contact@."
-msgstr "Merci d’utiliser une adresse e-mail personnelle, pas une adresse partagée comme info@ ou contact@."
+msgstr "Veuillez utiliser une adresse e-mail personnelle, pas une adresse partagée comme info@ ou contact@."
 
 #. translators: %s: the email address with the likely typo corrected.
 #: includes/class-mailprobe-registration.php:159
@@ -406,4 +406,4 @@ msgstr "Cette adresse ne peut pas recevoir d’e-mails. Vouliez-vous dire %s ?"
 
 #: includes/class-mailprobe-registration.php:161
 msgid "This email address cannot receive emails. Please check it and try again."
-msgstr "Cette adresse ne peut pas recevoir d’e-mails. Vérifiez-la et réessayez."
+msgstr "Cette adresse ne peut pas recevoir d’e-mails. Veuillez la vérifier et réessayer."
