@@ -1,10 +1,10 @@
-=== MailProbe ===
+=== MailProbe – Stop Fake Signups ===
 Contributors: mailprobe
 Tags: fake registration, spam registration, disposable email, email verification, woocommerce
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,9 @@ The plugin fires the `mailprobe_order_checked` action with the order, the verdic
 No, this version checks new registrations and new orders. To clean an existing list, upload it in your MailProbe dashboard.
 
 == Changelog ==
+
+= 0.1.1 =
+* The plugin takes its full name: MailProbe – Stop Fake Signups. No change in behaviour.
 
 = 0.1.0 =
 * First version: check at registration (WordPress and WooCommerce forms), background check of WooCommerce orders, settings page, credit balance and alerts.
