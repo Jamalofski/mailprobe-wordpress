@@ -9,3 +9,4 @@
 /bin export-ignore
 /languages export-ignore
 /dist export-ignore
+/.wordpress-org export-ignore

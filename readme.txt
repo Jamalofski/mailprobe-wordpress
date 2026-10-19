@@ -82,6 +82,13 @@ The plugin fires the `mailprobe_order_checked` action with the order, the verdic
 
 No, this version checks new registrations and new orders. To clean an existing list, upload it in your MailProbe dashboard.
 
+== Screenshots ==
+
+1. A registration refused on the WooCommerce "My account" form: the address has a typo, and the message suggests the fix.
+2. The "Email check" column in the WooCommerce orders list.
+3. The private note left on an order whose billing email cannot receive emails.
+4. The settings page: API key and credit balance, registration rules, order checks and activity.
+
 == Changelog ==
 
 = 0.1.1 =
