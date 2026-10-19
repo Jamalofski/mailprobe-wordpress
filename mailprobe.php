@@ -3,7 +3,7 @@
  * Plugin Name:          MailProbe – Stop Fake Signups
  * Plugin URI:           https://mailprobe.dev/
  * Description:          Refuses registrations with an email address that cannot receive emails or is disposable, and flags WooCommerce orders whose billing email has the same problem. Checks by MailProbe, hosted in the EU (France).
- * Version:              0.1.1
+ * Version:              0.1.2
  * Requires at least:    6.5
  * Requires PHP:         7.4
  * Author:               Iris Digital
@@ -19,7 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'MAILPROBE_VERSION', '0.1.1' );
+define( 'MAILPROBE_VERSION', '0.1.2' );
 define( 'MAILPROBE_FILE', __FILE__ );
 if ( ! defined( 'MAILPROBE_API_BASE' ) ) {
 	define( 'MAILPROBE_API_BASE', 'https://mailprobe.dev/api/v1' );

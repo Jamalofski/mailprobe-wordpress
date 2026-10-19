@@ -252,14 +252,24 @@ class MailProbe_Admin {
 			<?php else : ?>
 				<p>
 					<?php
+					// One plural form per count: "1 registration refused", not "1 registrations".
+					$checked = (int) $stats['checked'];
+					$blocked = (int) $stats['blocked'];
+					$flagged = (int) $stats['flagged'];
+					$counts  = array(
+						/* translators: %s: number of addresses. */
+						sprintf( _n( '%s address checked', '%s addresses checked', $checked, 'mailprobe' ), number_format_i18n( $checked ) ),
+						/* translators: %s: number of registrations. */
+						sprintf( _n( '%s registration refused', '%s registrations refused', $blocked, 'mailprobe' ), number_format_i18n( $blocked ) ),
+						/* translators: %s: number of orders. */
+						sprintf( _n( '%s order flagged', '%s orders flagged', $flagged, 'mailprobe' ), number_format_i18n( $flagged ) ),
+					);
 					echo esc_html(
 						sprintf(
-							/* translators: 1: date, 2: addresses checked, 3: registrations refused, 4: orders flagged. */
-							__( 'Since %1$s: %2$s addresses checked, %3$s registrations refused, %4$s orders flagged.', 'mailprobe' ),
+							/* translators: 1: date, 2: the three counts as a list, for example "8 addresses checked, 2 registrations refused, and 1 order flagged". */
+							__( 'Since %1$s: %2$s.', 'mailprobe' ),
 							date_i18n( get_option( 'date_format' ), (int) $stats['since'] ),
-							number_format_i18n( (int) $stats['checked'] ),
-							number_format_i18n( (int) $stats['blocked'] ),
-							number_format_i18n( (int) $stats['flagged'] )
+							wp_sprintf( '%l', $counts )
 						)
 					);
 					?>

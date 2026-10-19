@@ -1,18 +1,16 @@
-# Copyright (C) 2026 Iris Digital
-# This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: MailProbe – Stop Fake Signups 0.1.1\n"
 "Report-Msgid-Bugs-To: https://github.com/jamalofski/mailprobe-wordpress/issues\n"
 "Last-Translator: Iris Digital\n"
 "Language-Team: French\n"
-"Language: fr_FR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-10-14T12:47:31+00:00\n"
 "PO-Revision-Date: 2026-10-17 15:00+0000\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: mailprobe\n"
 
@@ -153,55 +151,49 @@ msgstr "Activité"
 msgid "No address checked yet."
 msgstr "Aucune adresse vérifiée pour l’instant."
 
-#. translators: 1: date, 2: addresses checked, 3: registrations refused, 4: orders flagged.
-#: includes/class-mailprobe-admin.php:258
-#, php-format
-msgid "Since %1$s: %2$s addresses checked, %3$s registrations refused, %4$s orders flagged."
-msgstr "Depuis le %1$s : %2$s adresses vérifiées, %3$s inscriptions refusées, %4$s commandes signalées."
-
 #. translators: 1: sign-up URL.
-#: includes/class-mailprobe-admin.php:280
+#: includes/class-mailprobe-admin.php:290
 #, php-format
 msgid "No account yet? <a href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Create one on mailprobe.dev</a>: 100 checks are free. Then open the Developer tab of your MailProbe dashboard, create an API key and paste it here."
 msgstr "Pas encore de compte ? <a href=\"%1$s\" target=\"_blank\" rel=\"noopener\">Créez-en un sur mailprobe.dev</a> : 100 vérifications sont offertes. Ouvrez ensuite l’onglet Developer de votre tableau de bord MailProbe, créez une clé de l’API et collez-la ici."
 
 #. translators: 1: number of credits, 2: pricing URL.
-#: includes/class-mailprobe-admin.php:301
+#: includes/class-mailprobe-admin.php:311
 #, php-format
 msgid "Connected: %1$s credit left. <a href=\"%2$s\" target=\"_blank\" rel=\"noopener\">Buy credits</a>"
 msgid_plural "Connected: %1$s credits left. <a href=\"%2$s\" target=\"_blank\" rel=\"noopener\">Buy credits</a>"
 msgstr[0] "Connecté : %1$s crédit restant. <a href=\"%2$s\" target=\"_blank\" rel=\"noopener\">Acheter des crédits</a>"
 msgstr[1] "Connecté : %1$s crédits restants. <a href=\"%2$s\" target=\"_blank\" rel=\"noopener\">Acheter des crédits</a>"
 
-#: includes/class-mailprobe-admin.php:330
+#: includes/class-mailprobe-admin.php:340
 msgid "MailProbe is active but not connected yet."
 msgstr "MailProbe est activé mais pas encore connecté."
 
-#: includes/class-mailprobe-admin.php:332
+#: includes/class-mailprobe-admin.php:342
 msgid "Add your API key"
 msgstr "Ajouter votre clé de l’API"
 
-#: includes/class-mailprobe-admin.php:346
+#: includes/class-mailprobe-admin.php:356
 msgid "MailProbe has no credits left: registrations and orders are no longer checked."
 msgstr "MailProbe n’a plus de crédits : les inscriptions et les commandes ne sont plus vérifiées."
 
-#: includes/class-mailprobe-admin.php:347
+#: includes/class-mailprobe-admin.php:357
 msgid "Buy credits"
 msgstr "Acheter des crédits"
 
-#: includes/class-mailprobe-admin.php:349
+#: includes/class-mailprobe-admin.php:359
 msgid "MailProbe refused the API key: registrations and orders are no longer checked."
 msgstr "MailProbe a refusé la clé de l’API : les inscriptions et les commandes ne sont plus vérifiées."
 
-#: includes/class-mailprobe-admin.php:350
+#: includes/class-mailprobe-admin.php:360
 msgid "Check the key"
 msgstr "Vérifier la clé"
 
-#: includes/class-mailprobe-admin.php:352
+#: includes/class-mailprobe-admin.php:362
 msgid "Dismiss"
 msgstr "Ignorer"
 
-#: includes/class-mailprobe-admin.php:360
+#: includes/class-mailprobe-admin.php:370
 msgid "You are not allowed to do this."
 msgstr "Vous n’avez pas l’autorisation de faire cela."
 
@@ -407,3 +399,33 @@ msgstr "Cette adresse ne peut pas recevoir d’e-mails. Vouliez-vous dire %s ?"
 #: includes/class-mailprobe-registration.php:161
 msgid "This email address cannot receive emails. Please check it and try again."
 msgstr "Cette adresse ne peut pas recevoir d’e-mails. Veuillez la vérifier et réessayer."
+
+#. translators: %s: number of addresses.
+#: includes/class-mailprobe-admin.php:261
+#, php-format
+msgid "%s address checked"
+msgid_plural "%s addresses checked"
+msgstr[0] "%s adresse vérifiée"
+msgstr[1] "%s adresses vérifiées"
+
+#. translators: %s: number of registrations.
+#: includes/class-mailprobe-admin.php:263
+#, php-format
+msgid "%s registration refused"
+msgid_plural "%s registrations refused"
+msgstr[0] "%s inscription refusée"
+msgstr[1] "%s inscriptions refusées"
+
+#. translators: %s: number of orders.
+#: includes/class-mailprobe-admin.php:265
+#, php-format
+msgid "%s order flagged"
+msgid_plural "%s orders flagged"
+msgstr[0] "%s commande signalée"
+msgstr[1] "%s commandes signalées"
+
+#. translators: 1: date, 2: the three counts as a list, for example "8 addresses checked, 2 registrations refused, and 1 order flagged".
+#: includes/class-mailprobe-admin.php:270
+#, php-format
+msgid "Since %1$s: %2$s."
+msgstr "Depuis le %1$s : %2$s."

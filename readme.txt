@@ -4,7 +4,7 @@ Tags: fake registration, spam registration, disposable email, email verification
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -90,6 +90,9 @@ No, this version checks new registrations and new orders. To clean an existing l
 4. The settings page: API key and credit balance, registration rules, order checks and activity.
 
 == Changelog ==
+
+= 0.1.2 =
+* The activity line of the settings page uses the singular for one: "1 registration refused", not "1 registrations refused".
 
 = 0.1.1 =
 * The plugin takes its full name: MailProbe – Stop Fake Signups. No change in behaviour.
