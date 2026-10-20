@@ -28,6 +28,16 @@ class MailProbe_Admin {
 	const PRICING_URL = 'https://mailprobe.dev/pricing/';
 
 	/**
+	 * The plugin's support forum on WordPress.org.
+	 */
+	const SUPPORT_URL = 'https://wordpress.org/support/plugin/mailprobe/';
+
+	/**
+	 * Where a review of the plugin is left on WordPress.org.
+	 */
+	const REVIEW_URL = 'https://wordpress.org/support/plugin/mailprobe/reviews/#new-post';
+
+	/**
 	 * Hooks.
 	 */
 	public static function hooks() {
@@ -275,6 +285,19 @@ class MailProbe_Admin {
 					?>
 				</p>
 			<?php endif; ?>
+
+			<p class="description">
+				<?php
+				printf(
+					'%1$s <a href="%2$s" target="_blank" rel="noopener">%3$s</a> &middot; <a href="%4$s" target="_blank" rel="noopener">%5$s</a>',
+					esc_html__( 'MailProbe on WordPress.org:', 'mailprobe' ),
+					esc_url( self::SUPPORT_URL ),
+					esc_html__( 'support forum', 'mailprobe' ),
+					esc_url( self::REVIEW_URL ),
+					esc_html__( 'leave a review', 'mailprobe' )
+				);
+				?>
+			</p>
 		</div>
 		<?php
 	}
